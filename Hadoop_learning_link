@@ -5,6 +5,7 @@ http://www.aboutyun.com/thread-8146-1-1.html
 http://www.cnblogs.com/meiyuanbao/p/3545929.html   国内第一篇详细讲解hadoop2的automatic HA+Federation+Yarn配置的教程
 
 http://www.cnblogs.com/ljy2013/articles/4345172.html  （centos7.0)
+http://www.cnblogs.com/ljy2013/articles/4345172.html
 
 JDK 7
 Debian, Ubuntu, etc.
@@ -13,4 +14,25 @@ On the command line, type:
 
     $ sudo apt-get install openjdk-7-jdk          (for jps command)
     
-http://www.tuicool.com/articles/iUBJJj3  (hadoop2 with zookeeper)
+http://www.tuicool.com/articles/iUBJJj3  (hadoop2 with zookeeper，资源管理器热备)
+
+http://www.cnblogs.com/ljy2013/p/4510143.html （zookeeper3.4.6 安装)
+
+http://www.cnblogs.com/likehua/p/3999538.html (kafka0.9+zookeeper config)
+
+http://kafka.apache.org/documentation.html#zkversion  (kafka官方文档）
+
+http://www.tuicool.com/articles/YNJb2y (PDSH用法）
+pdsh -w ssh:user001,ssh:user002,ssh:user003 "date"
+
+
+详细的hadoop2.2.0集群的HA高可靠的最简单配置
+。在未格式化过的NameNode上执行命令“hdfs  namenode  -bootstrapStandby”
+http://www.superwu.cn/2014/01/24/983/  （no using zookeeper）
+
+http://chengjianxiaoxue.iteye.com/blog/2174940  （hadoop2 搭建自动切换with zk）
+
+===========
+  yarn-daemon.sh start  resourcemanager
+  
+  sbin/hadoop-daemon.sh start zkfc 
