@@ -1,0 +1,17 @@
+https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Wbaca767aac15_4918_91ec_7d5014efde02/page/Developer Setup 
+申请权限guide 
+
+http://docs.ansible.com/  （ansible)
+
+http://www.360doc.com/content/13/0124/21/1054746_262221853.shtml  (扩大ubuntu磁盘 ，vi /etc/fstab)
+http://www.jbxue.com/LINUXjishu/10305.html
+http://www.360doc.com/content/13/0124/21/1054746_262221853.shtml
+http://blog.csdn.net/yonghuaqin/article/details/12713999 (my blog on csdn)
+
+//mount -t iso9600 -o loop /dev/cdrom /mnt/cdrom
+
+==task1
+1. build the docker registry.
+2. upload docker images(from the usb disk) into the env.
+3. load those images into the docker registry.
+==
