@@ -1,0 +1,25 @@
+root@iotdocker:~# route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         192.168.1.1     0.0.0.0         UG    0      0        0 eth0
+localnet        *               255.255.255.0   U     0      0        0 eth0
+172.17.0.0      *               255.255.0.0     U     0      0        0 docker0
+192.168.1.0     *               255.255.255.0   U     0      0        0 eth0
+==
+ping, tracepath (tracert in windows), arp, route, ip dns (host)  
+linux 先 /etc/resolv.conf  
+/etc/nsswitch.conf  
+貌似这类的东西  
+homedirectory/.ssh/  
+.rhosts  
+/etc/pam.d  
+
+===GW 20 MACHINE
+change the line "net.ipv4.ip_forward = 0" in /etc/sysctl.conf to "net.ipv4.ip_forward = 1"
+restart system
+ifconfig eth1:1 192.168.1.1/24
+iptable -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth1 -j SNAT --to 9.112.229.20 
+
+11:09:47 AM: key steps 
+==================================
+
