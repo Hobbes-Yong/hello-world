@@ -15,3 +15,6 @@ http://blog.csdn.net/yonghuaqin/article/details/12713999 (my blog on csdn)
 2. upload docker images(from the usb disk) into the env.
 3. load those images into the docker registry.
 ==
+====ubuntu 下添加开机启动脚本
+http://www.cnblogs.com/ainiaa/archive/2011/12/05/2276996.html
+http://blog.163.com/yangshuai126%40126/blog/static/1734262652010928101641555/  （/etc/init.d)
